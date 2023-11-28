@@ -1,6 +1,6 @@
-Vagrant.configure("2") do |config|
+vVagrant.configure("2") do |config|
     config.vm.define "dragndev" do |dragn|
-        dragn.vm.hostname = "dragncards"
+        dragn.vm.hostname = "dragncardsdev"
         dragn.vm.box = "ubuntu/focal64"
       #forwarded ports for access from local machine
         dragn.vm.network "forwarded_port", guest: 3000, host: 3000
